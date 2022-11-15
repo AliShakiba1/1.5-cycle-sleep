@@ -62,6 +62,8 @@ const millisecondToHours = myDuration => {
 }
 
 inputTime.addEventListener('input', e => {
+  showTimeElement.innerHTML = ''
+
   counter = 0
 
   let [hourUser, minUser] = e.target.value.split(':')
